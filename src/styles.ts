@@ -1,29 +1,28 @@
 import { createGlobalStyle } from "styled-components";
 
 export const colors = {
-  lightRed: "#E66767",
-  beige: "#FFF8F2",
-  white: "#FFFFFF",
-  darkBeige: "#FFEBD9"
+  white: "#ffffff",
+  whitePinkish: "#FFEBD9",
+  lightPink: "#E66767",
+  background: "#fff8f2"
 };
 
-export const GlobalCss = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     list-style: none;
   }
 
   body {
-    background-color: ${colors.beige};
-    color: ${colors.lightRed};
+    background-color: ${colors.background};
   }
 
   .container {
     max-width: 1024px;
     width: 100%;
-    margin: 0px auto;
-  }
+    margin: 0 auto;
+    }
 `;

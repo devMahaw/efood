@@ -1,12 +1,20 @@
-import Header from "./components/Header";
-import { GlobalCss } from "./styles";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+
+import { GlobalStyles } from "./styles";
+import Footer from "./components/Footer";
+import Paths from "./routes";
+import { store } from "./store";
 
 function App() {
   return (
-    <>
-      <GlobalCss />
-      <Header />
-    </>
+    <Provider store={store}>
+      <BrowserRouter>
+        <GlobalStyles />
+        <Paths />
+        <Footer />
+      </BrowserRouter>
+    </Provider>
   );
 }
 
