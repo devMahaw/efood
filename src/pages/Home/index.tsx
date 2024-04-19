@@ -18,7 +18,6 @@ export type RestaurantType = {
       preco: number;
       nome: string;
       descricao: string;
-      porcao: string;
     }
   ];
 };
